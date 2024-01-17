@@ -5,23 +5,23 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@rollout/framework@npm:2.1.1":
-  version: 2.1.1
-  resolution: "@rollout/framework@npm:2.1.1"
+"@rollout/framework@npm:2.2.23":
+  version: 2.2.23
+  resolution: "@rollout/framework@npm:2.2.23"
   dependencies:
-    "@sinclair/typebox": 0.31.28
+    "@sinclair/typebox": 0.32.0
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: de76bc1a7d2bb8544f60be25c2d09a7b15a08b16401b98980e6a5807ebde4299557654a14553feeb3174a03c4a2cc51ef07607c754ed1d79996058f9057c83d6
+  checksum: 8e90d6614a9ae069f37ae7bf4fb48eb164e82d7ecbad8e661c3f8c9dde0a206e8745577d172ba350483f90514bf9def3f71d20ba703a832c2307ef222d074bed
   languageName: node
   linkType: hard
 
-"@sinclair/typebox@npm:0.31.28":
-  version: 0.31.28
-  resolution: "@sinclair/typebox@npm:0.31.28"
-  checksum: 0dd8e11bb608a28f8db6aa6166a354453126249e5bbf4442654ba1c520bd10a55d0beb4cb294f4834a7619efa833a870a31902933a46548bfc24d0e0710576d2
+"@sinclair/typebox@npm:0.32.0":
+  version: 0.32.0
+  resolution: "@sinclair/typebox@npm:0.32.0"
+  checksum: dcbc219c86aa4301be247c08593b3d8a2276e2312b12dc441f67b7043a1e4e5af1da3c9c269cc8a5b7a680ce024768ce2c464e0e6f8308dff8a236ccd2325ab4
   languageName: node
   linkType: hard
 
@@ -118,7 +118,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rollout-tools-project@workspace:."
   dependencies:
-    "@rollout/framework": 2.1.1
+    "@rollout/framework": 2.2.23
     "@types/node": ^20.8.4
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
