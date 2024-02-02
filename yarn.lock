@@ -5034,9 +5034,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/api-client-react@npm:2.2.29":
-  version: 2.2.29
-  resolution: "@rollout/api-client-react@npm:2.2.29"
+"@rollout/api-client-react@npm:2.2.35":
+  version: 2.2.35
+  resolution: "@rollout/api-client-react@npm:2.2.35"
   dependencies:
     "@trpc/client": "npm:10.43.0"
     "@trpc/react-query": "npm:10.43.0"
@@ -5046,13 +5046,13 @@ __metadata:
     "@tanstack/react-query": ^4
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 00b535ac8e1a29e43020e1c5f65ab93e67528bf17223c936a13bd64bb9e1e4b8db07dd53cc638105a11dca87bf8f502ca9d783e6c4d95e0493e31f1473017afc
+  checksum: 977ed491a59928b325bb7d74df41b108f6d92a5551db187fc986ca0332477e3f0e81d61c53365cad963f03c37027299442bb5f0a884816cbb5b00c7640586f7f
   languageName: node
   linkType: hard
 
-"@rollout/common@npm:2.2.29":
-  version: 2.2.29
-  resolution: "@rollout/common@npm:2.2.29"
+"@rollout/common@npm:2.2.35":
+  version: 2.2.35
+  resolution: "@rollout/common@npm:2.2.35"
   dependencies:
     "@sinclair/typebox": "npm:0.32.10"
     "@tiptap/extension-blockquote": "npm:v2.0.2"
@@ -5081,20 +5081,20 @@ __metadata:
   peerDependencies:
     "@tiptap/core": v2.0.2
     "@tiptap/pm": v2.0.2
-  checksum: e8e133de0ecb5d55890fd7d2c076d60990a4908baa0577c51a4b9923ac38093c5895fd072b84a4b47966140dd8fd5fdb445833ad1326dd658b8f4a1f31608bd4
+  checksum: 46fd8b3966c670c6bdef417246ffcb9c96e949a130950eab9ffe01e3f39f2d7559d93d339e299563bf4d99989a19a771ea3d0bf6efc53f50517084eb833c90cd
   languageName: node
   linkType: hard
 
-"@rollout/connect-react@npm:2.2.29":
-  version: 2.2.29
-  resolution: "@rollout/connect-react@npm:2.2.29"
+"@rollout/connect-react@npm:2.2.35":
+  version: 2.2.35
+  resolution: "@rollout/connect-react@npm:2.2.35"
   dependencies:
     "@elysiajs/eden": "npm:0.8.1"
     "@react-aria/ssr": "npm:3.4.0"
-    "@rollout/api-client-react": "npm:2.2.29"
-    "@rollout/common": "npm:2.2.29"
-    "@rollout/framework": "npm:2.2.29"
-    "@rollout/ui": "npm:2.2.29"
+    "@rollout/api-client-react": "npm:2.2.35"
+    "@rollout/common": "npm:2.2.35"
+    "@rollout/framework": "npm:2.2.35"
+    "@rollout/ui": "npm:2.2.35"
     "@sinclair/typebox": "npm:0.32.10"
     ajv: "npm:8.12.0"
     assert: "npm:2.1.0"
@@ -5106,28 +5106,29 @@ __metadata:
     spin-delay: "npm:^1.1.0"
     zod: "npm:3.22.4"
   peerDependencies:
+    "@tanstack/react-query": ^4
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: c75513a71d030f451c81f22e1b31d1f7cf388a681184460e27381a7fe33c9e59fcc5f6a8599b4acf48c465015f7ebaea2e133638c367415cffe80b667db288fb
+  checksum: 74356c6164bdc4cf0a04c6beac645464a0a69df66655bf25aeb318e03e4f1714cc22167cc889b48145283bc80de54121a211eec18e240858d94e9e5181fd4483
   languageName: node
   linkType: hard
 
-"@rollout/framework@npm:2.2.29":
-  version: 2.2.29
-  resolution: "@rollout/framework@npm:2.2.29"
+"@rollout/framework@npm:2.2.35":
+  version: 2.2.35
+  resolution: "@rollout/framework@npm:2.2.35"
   dependencies:
     "@sinclair/typebox": "npm:0.32.10"
     react: "npm:>=16.8.0"
     react-dom: "npm:>=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: 9860b343c45884df0e6c27138a7cc68707c64ececfc03798fcea89177a1bd68af351b3c658e09e7abf3d39b23f7bd0ea316f422d5b6d5ea418d016c086185453
+  checksum: 279fe884fb2cbe841996b6a104bd68d5fc8e4971cfdec49f1f8a49d20739c2b3bbb4d2becf06ed136ed949cd412255b4cdb8f3ef48ba16ecb074948d74986dac
   languageName: node
   linkType: hard
 
-"@rollout/ui@npm:2.2.29":
-  version: 2.2.29
-  resolution: "@rollout/ui@npm:2.2.29"
+"@rollout/ui@npm:2.2.35":
+  version: 2.2.35
+  resolution: "@rollout/ui@npm:2.2.35"
   dependencies:
     "@ctrl/tinycolor": "npm:^3.4.1"
     "@internationalized/date": "npm:^3.0.1"
@@ -5149,7 +5150,7 @@ __metadata:
     "@react-stately/radio": "npm:^3.6.0"
     "@react-stately/tabs": "npm:^3.2.2"
     "@react-stately/toggle": "npm:^3.4.2"
-    "@rollout/common": "npm:2.2.29"
+    "@rollout/common": "npm:2.2.35"
     "@stitches/react": "npm:1.3.1-1"
     "@tiptap/core": "npm:2.0.2"
     "@tiptap/extension-document": "npm:2.0.2"
@@ -5173,7 +5174,7 @@ __metadata:
     date-fns: ^2.30.0
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 35367f0300b7df0cc8b1b6207f0b6e2fa9de9e11629bb0a556f96d662c5dab81a307e30998234bc6dc5523a346f4fe52f86f80c42191f745b65b6e69d60246b0
+  checksum: 302206e0cc79e750bb5978d8c26a8b470635f01e369bda159ddb4c99bd25ad94482030beea3bdec1e930aee472020210038152d522d1b35e221a327607ebc309
   languageName: node
   linkType: hard
 
@@ -17249,7 +17250,7 @@ __metadata:
     "@mantine/notifications": "npm:^7.4.1"
     "@next/bundle-analyzer": "npm:^14.0.0"
     "@next/eslint-plugin-next": "npm:^14.0.0"
-    "@rollout/connect-react": "npm:2.2.29"
+    "@rollout/connect-react": "npm:2.2.35"
     "@storybook/addon-essentials": "npm:^7.5.2"
     "@storybook/addon-styling-webpack": "npm:^0.0.5"
     "@storybook/blocks": "npm:^7.5.2"
