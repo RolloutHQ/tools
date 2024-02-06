@@ -216,9 +216,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/cli@npm:2.2.22":
-  version: 2.2.22
-  resolution: "@rollout/cli@npm:2.2.22"
+"@rollout/cli@npm:2.2.54":
+  version: 2.2.54
+  resolution: "@rollout/cli@npm:2.2.54"
   dependencies:
     "@elysiajs/eden": 0.8.1
     chokidar: 3.5.3
@@ -234,7 +234,7 @@ __metadata:
     zod: 3.22.4
   bin:
     rollout: dist/cli.cjs.js
-  checksum: 02bfbb1d1487bedfa6635ec12b81b339d7bec144c5f755866bc9e2a002c0eb975512ec231cd22146ac441f550dc182dffd274ff23606aca27e7c3c82532be842
+  checksum: 2b0dc1db6b9c21d4da3bfb706fdeda20e8e9ac85a40c478fb2cb6244d1d67447bb16188303693c0277cdbdfe4aae26f261d0df1f27cd3bcff47430b733282400
   languageName: node
   linkType: hard
 
@@ -1763,7 +1763,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rollout-tools-project@workspace:."
   dependencies:
-    "@rollout/cli": 2.2.22
+    "@rollout/cli": 2.2.54
     "@rollout/framework": 2.2.35
     "@types/node": ^20.8.4
     "@types/react": ^18.0.28
