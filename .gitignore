@@ -133,5 +133,5 @@ dist
 
 .DS_Store
 
-# Rollout folder
-/rollout/node_modules
+# Rollout
+.rollout-project-env-key.local
