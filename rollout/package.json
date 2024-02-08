@@ -3,13 +3,13 @@
   "main": "./index.ts",
   "license": "MIT",
   "dependencies": {
-    "@rollout/framework": "2.2.35",
+    "@rollout/framework": "2.2.56",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@rollout/cli": "2.2.54",
+    "@rollout/cli": "2.2.55",
     "@types/node": "^20.8.4",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
