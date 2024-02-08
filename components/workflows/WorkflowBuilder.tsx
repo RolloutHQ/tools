@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { TestTriggerButton } from './TriggerTestButton';
 
-const ROLLOUT_BASE_URL = 'https://rollout-automate.rolloutapp.com/api';
+const ROLLOUT_BASE_URL = 'https://rollout-tools.rolloutapp.com/api';
 
 type AutomationManagerProps = {
   userId: string;
