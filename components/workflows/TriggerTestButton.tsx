@@ -22,7 +22,7 @@ export function TestTriggerButton(props: TestTriggerButtonProps) {
         redirect: 'follow',
         body: JSON.stringify({
           appKey: 'rollout-automate',
-          triggerKey: 'my-push-trigger',
+          triggerKey: 'test-trigger',
           payload: {
             name: 'Test Automation',
             id: '123456',

@@ -4,7 +4,7 @@ import { inputParamsSchema } from './input';
 import { payloadSchema } from './payload';
 
 export const trigger = definePushTrigger()({
-  name: 'My push trigger',
+  name: 'Test Trigger',
   inputParamsSchema,
   payloadSchema,
 });

@@ -1,5 +1,5 @@
-import { action as myAction } from './my-action/action';
+import { action as testAction } from './test-action/action';
 
 export const actions = {
-  'my-action': myAction,
+  'test-action': testAction,
 };

@@ -1,5 +1,5 @@
-import { trigger as myPushTrigger } from './my-push-trigger/trigger';
+import { trigger as myPushTrigger } from './test-trigger/trigger';
 
 export const triggers = {
-  'my-push-trigger': myPushTrigger,
+  'test-trigger': myPushTrigger,
 };
