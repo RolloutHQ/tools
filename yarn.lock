@@ -1794,17 +1794,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@elysiajs/eden@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@elysiajs/eden@npm:0.8.1"
+"@elysiajs/eden@npm:1.0.7":
+  version: 1.0.7
+  resolution: "@elysiajs/eden@npm:1.0.7"
   dependencies:
-    superjson: "npm:^2.2.1"
+    "@elysiajs/stream": "npm:rc"
   peerDependencies:
-    elysia: ">= 0.8.0"
-  peerDependenciesMeta:
-    "@sinclair/typebox":
-      optional: true
-  checksum: b3eeb1c4b32a37c310d8865c2f2c151c2ed6337fb00ebbe614f2d795ec52e10e1928b21a40d73ef63bfec59e3da3d65e17550135f996291b4db3dd29f3296c74
+    elysia: ">= 1.0.2"
+  checksum: 9346de36873f8064046c083dc0f9c522991252d56aa0cf10cf2599ea60ca6a74fbf88cbce5fed561c81c9d37ddcc93c2ac497c528acef5ed43883a0c36a0a0c7
+  languageName: node
+  linkType: hard
+
+"@elysiajs/stream@npm:rc":
+  version: 1.0.0-rc.0
+  resolution: "@elysiajs/stream@npm:1.0.0-rc.0"
+  dependencies:
+    nanoid: "npm:^5.0.1"
+  peerDependencies:
+    elysia: ">= 1.0.0-rc.0"
+  checksum: 2ae179a4e6c401431839be275fb362eb4587139e4b5e37b1d35e1395c9b7be1d7a1f16d7e1db285ada1b2f1171c0350df58a89b7736c87086167ca222d648534
   languageName: node
   linkType: hard
 
@@ -5034,9 +5042,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/api-client-react@npm:2.2.92":
-  version: 2.2.92
-  resolution: "@rollout/api-client-react@npm:2.2.92"
+"@rollout/api-client-react@npm:2.2.96":
+  version: 2.2.96
+  resolution: "@rollout/api-client-react@npm:2.2.96"
   dependencies:
     "@trpc/client": "npm:10.43.0"
     "@trpc/react-query": "npm:10.43.0"
@@ -5046,13 +5054,13 @@ __metadata:
     "@tanstack/react-query": ^4
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 0b15ebf3a0b91decf77410f5180ad2efba75ea8f5e5bbe08da4cb29a93d84317bdff4b8a71be009094ed10ded0ecdf839df0b734b0f32a84af4dc133b315f16c
+  checksum: befe8131a78da4b7dfa20db3e8a219bbb0ba4f99d39707d93ca5293d7f0a3261b8d41926aec307e2238d6708d26141d5248e9c0c9225ec8593fbae4e4679d28f
   languageName: node
   linkType: hard
 
-"@rollout/common@npm:2.2.92":
-  version: 2.2.92
-  resolution: "@rollout/common@npm:2.2.92"
+"@rollout/common@npm:2.2.96":
+  version: 2.2.96
+  resolution: "@rollout/common@npm:2.2.96"
   dependencies:
     "@sinclair/typebox": "npm:0.32.10"
     "@tiptap/extension-blockquote": "npm:v2.0.2"
@@ -5081,20 +5089,20 @@ __metadata:
   peerDependencies:
     "@tiptap/core": v2.0.2
     "@tiptap/pm": v2.0.2
-  checksum: 53d1e137fd754dccfea1469f86efbd03cbc47ed04fa6ea27a0f0a4f093cea3deb989044bc150bfa5ee1e96e0ac67f89025a979633a1d81b83e68acfed4912474
+  checksum: b2263ee2942eb01624cb625796747fbaba4f6b8aabe26f7ae3cfbc857b118dd8ee1a6e9df8d865f20697441165849cb250c511d59e980c316b9f12b6866c2941
   languageName: node
   linkType: hard
 
-"@rollout/connect-react@npm:2.2.92":
-  version: 2.2.92
-  resolution: "@rollout/connect-react@npm:2.2.92"
+"@rollout/connect-react@npm:2.2.96":
+  version: 2.2.96
+  resolution: "@rollout/connect-react@npm:2.2.96"
   dependencies:
-    "@elysiajs/eden": "npm:0.8.1"
+    "@elysiajs/eden": "npm:1.0.7"
     "@react-aria/ssr": "npm:3.4.0"
-    "@rollout/api-client-react": "npm:2.2.92"
-    "@rollout/common": "npm:2.2.92"
-    "@rollout/framework": "npm:2.2.92"
-    "@rollout/ui": "npm:2.2.92"
+    "@rollout/api-client-react": "npm:2.2.96"
+    "@rollout/common": "npm:2.2.96"
+    "@rollout/framework": "npm:2.2.96"
+    "@rollout/ui": "npm:2.2.96"
     assert: "npm:2.1.0"
     json-schema-library: "npm:9.1.2"
     match-sorter: "npm:^6.3.1"
@@ -5108,26 +5116,26 @@ __metadata:
     "@tanstack/react-query": ^4
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 51a5aeb8659887ec28eb46f72598e9ed21f72cd317c14fa5f78575587fa699055690bc5fad76593029014caaee1e1d98c5f15f311ca6482bbd73d95cb4c50860
+  checksum: bd3775223de9e3a62914dfd86402a395e932e9842de921b43b039815fb164f163ff9bec0d635610321b0b176c7f9115c4d6f3a9092a76ee9c7b3eb09a369bde4
   languageName: node
   linkType: hard
 
-"@rollout/framework@npm:2.2.92":
-  version: 2.2.92
-  resolution: "@rollout/framework@npm:2.2.92"
+"@rollout/framework@npm:2.2.96":
+  version: 2.2.96
+  resolution: "@rollout/framework@npm:2.2.96"
   dependencies:
     "@sinclair/typebox": "npm:0.32.10"
     react: "npm:>=16.8.0"
     react-dom: "npm:>=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: 8cd9762d9402a60fbf4cdbdfe44d8010c9c79b4bbe587ee894bbcb44d7ebace37aba329018a61ebb3b1123c1abcde45e80e8b50d4633d6520470be1f7f1414d1
+  checksum: f519f038edca7ba76a00372afb42fbd3d4273fd35cc535b89de8c83baa2cf38e502af586f789d28e3ddae420e8583d00d8e2bead49786105f04aa14eeac5df08
   languageName: node
   linkType: hard
 
-"@rollout/ui@npm:2.2.92":
-  version: 2.2.92
-  resolution: "@rollout/ui@npm:2.2.92"
+"@rollout/ui@npm:2.2.96":
+  version: 2.2.96
+  resolution: "@rollout/ui@npm:2.2.96"
   dependencies:
     "@ctrl/tinycolor": "npm:^3.4.1"
     "@internationalized/date": "npm:^3.0.1"
@@ -5149,7 +5157,7 @@ __metadata:
     "@react-stately/radio": "npm:^3.6.0"
     "@react-stately/tabs": "npm:^3.2.2"
     "@react-stately/toggle": "npm:^3.4.2"
-    "@rollout/common": "npm:2.2.92"
+    "@rollout/common": "npm:2.2.96"
     "@stitches/react": "npm:1.3.1-1"
     "@tiptap/core": "npm:2.0.2"
     "@tiptap/extension-document": "npm:2.0.2"
@@ -5173,7 +5181,7 @@ __metadata:
     date-fns: ^2.30.0
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 70f375e619162c379bc0cac6ebe575d90da0a5e92f7d2092b2a40d44bd733271fede2c1bbc428019ecdb18e8c743b575337829ea6a728404e7e3133299b14d30
+  checksum: e75eae045e43ce33327e2a83bb31702393dab5214680ed8a82c763433877c84323735eaa806593f1dccb2ad326f44a17d1dbd6b7d3f2053204e646c6e83520d6
   languageName: node
   linkType: hard
 
@@ -9624,15 +9632,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"copy-anything@npm:^3.0.2":
-  version: 3.0.5
-  resolution: "copy-anything@npm:3.0.5"
-  dependencies:
-    is-what: "npm:^4.1.8"
-  checksum: 01eadd500c7e1db71d32d95a3bfaaedcb839ef891c741f6305ab0461398056133de08f2d1bf4c392b364e7bdb7ce498513896e137a7a183ac2516b065c28a4fe
-  languageName: node
-  linkType: hard
-
 "copy-to-clipboard@npm:^3.3.1":
   version: 3.3.3
   resolution: "copy-to-clipboard@npm:3.3.3"
@@ -13048,13 +13047,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-what@npm:^4.1.8":
-  version: 4.1.16
-  resolution: "is-what@npm:4.1.16"
-  checksum: 611f1947776826dcf85b57cfb7bd3b3ea6f4b94a9c2f551d4a53f653cf0cb9d1e6518846648256d46ee6c91d114b6d09d2ac8a07306f7430c5900f87466aae5b
-  languageName: node
-  linkType: hard
-
 "is-wsl@npm:^2.2.0":
   version: 2.2.0
   resolution: "is-wsl@npm:2.2.0"
@@ -14834,6 +14826,15 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: 606b355960d0fcbe3d27924c4c52ef7d47d3b57208808ece73279420d91469b01ec1dce10fae512b6d4a8c5a5432b352b228336a8b2202a6ea68e67fa348e2ee
+  languageName: node
+  linkType: hard
+
+"nanoid@npm:^5.0.1":
+  version: 5.0.7
+  resolution: "nanoid@npm:5.0.7"
+  bin:
+    nanoid: bin/nanoid.js
+  checksum: a3fb1c157e3e35378f44e5a7130c70f80c9037f66c9a37285e5e3d8298e8405fcb2399baaa420980b0fe5fd9c2e4186a6a31c3526f21de03cf34c1b459871401
   languageName: node
   linkType: hard
 
@@ -17352,7 +17353,7 @@ __metadata:
     "@mantine/notifications": "npm:^7.4.1"
     "@next/bundle-analyzer": "npm:^14.0.0"
     "@next/eslint-plugin-next": "npm:^14.0.0"
-    "@rollout/connect-react": "npm:2.2.92"
+    "@rollout/connect-react": "npm:2.2.96"
     "@storybook/addon-essentials": "npm:^7.5.2"
     "@storybook/addon-styling-webpack": "npm:^0.0.5"
     "@storybook/blocks": "npm:^7.5.2"
@@ -18404,15 +18405,6 @@ __metadata:
   peerDependencies:
     postcss: ^8.3.3
   checksum: 18b78c8839ab9eea9681366223277e10adf6b1dd54e7b64fbdae3a1234eedcc16a772bb62c8f3dc9665acc07496981e24bf773c8c362b5f294b9b1e12fbe58aa
-  languageName: node
-  linkType: hard
-
-"superjson@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "superjson@npm:2.2.1"
-  dependencies:
-    copy-anything: "npm:^3.0.2"
-  checksum: 5d8202c955170bd98ef2647f712754ac54d2d007923cfdb53a4b035304d8964b8c41d5eff41ee277896e2ac32e06abb009b571f1589416b729fe40216320cc7a
   languageName: node
   linkType: hard
 
