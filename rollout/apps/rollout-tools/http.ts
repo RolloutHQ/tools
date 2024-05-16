@@ -5,15 +5,14 @@ import {
   handleConsumerRequest,
   handlePushTriggerEvent,
   waitForAutomationRunResult,
-  getAutomation
+  getAutomation,
 } from '@rollout/framework';
 
-const router = new Elysia()
-.post(
+const router = new Elysia().post(
   '/run-automation/:automationId',
   async ({ body, params, request }) => {
     const token = request.headers.get('authorization')?.replace('Bearer ', '');
-    
+
     if (!token) {
       throw new Response('No Authorization with Bearer token set', { status: 401 });
     }
@@ -29,13 +28,13 @@ const router = new Elysia()
         id: params.automationId,
       },
     });
-    
+
     if (automation.consumerKey !== requestValidation.consumer.consumerKey) {
-      throw new Response("Automation not found", { status: 400 });
+      throw new Response('Automation not found', { status: 400 });
     }
 
     if (!automation.live) {
-      throw new Response("Automation is not live", { status: 400 });
+      throw new Response('Automation is not live', { status: 400 });
     }
 
     const { automationRun } = await handlePushTriggerEvent({
