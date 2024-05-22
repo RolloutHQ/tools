@@ -4,6 +4,7 @@
   "license": "MIT",
   "dependencies": {
     "@rollout/framework": "2.2.147",
+    "elysia": "1.0.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "^3.22.4"
