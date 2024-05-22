@@ -3,7 +3,7 @@
   "main": "./index.ts",
   "license": "MIT",
   "dependencies": {
-    "@rollout/framework": "2.2.56",
+    "@rollout/framework": "2.2.147",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "^3.22.4"

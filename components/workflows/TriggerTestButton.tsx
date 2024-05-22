@@ -21,7 +21,7 @@ export function TestTriggerButton(props: TestTriggerButtonProps) {
         },
         redirect: 'follow',
         body: JSON.stringify({
-          appKey: 'rollout-automate',
+          appKey: 'rollout-tools',
           triggerKey: 'test-trigger',
           payload: {
             name: 'Test Automation',

@@ -238,16 +238,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/framework@npm:2.2.56":
-  version: 2.2.56
-  resolution: "@rollout/framework@npm:2.2.56"
+"@rollout/framework@npm:2.2.147":
+  version: 2.2.147
+  resolution: "@rollout/framework@npm:2.2.147"
   dependencies:
     "@sinclair/typebox": 0.32.10
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: 807e8c2a7c215be60a9e632bb23299b2d4cc5ffd83fea36c6bf8371f7ca4ba46eb4ed5445b450565bbb150ca87d13c0500b68ee0238673b1060f57bc9bbc5a85
+  checksum: d0c48d39273a4f80c57d7a88e3e58bdddc87e97296d875765d6829fe51b851cd6937793a1e0986accfd718a6020f30a03dc6c57b732f35fe0c2b25147b4a147d
   languageName: node
   linkType: hard
 
@@ -1764,7 +1764,7 @@ __metadata:
   resolution: "rollout-tools-project@workspace:."
   dependencies:
     "@rollout/cli": 2.2.92
-    "@rollout/framework": 2.2.56
+    "@rollout/framework": 2.2.147
     "@types/node": ^20.8.4
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11

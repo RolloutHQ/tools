@@ -1,5 +1,5 @@
-import { app as myApp } from './rollout-automate';
+import { app as rolloutTools } from './rollout-tools';
 
 export const myApps = {
-  'rollout-automate': myApp,
+  'rollout-tools': rolloutTools,
 };
