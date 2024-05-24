@@ -10,22 +10,10 @@ import {
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { TestTriggerButton } from './TriggerTestButton';
-
-const ROLLOUT_BASE_URL = 'https://rollout-tools.rolloutapp.com/api';
+import { getAutomations } from '@/lib/rollout-api';
 
 type AutomationManagerProps = {
   userId: string;
-};
-
-const getAutomations = async (token: string) => {
-  const response = await fetch(`${ROLLOUT_BASE_URL}/automations`, {
-    method: 'GET',
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  });
-  const automations = await response.json();
-  return automations;
 };
 
 export function WorkflowBuilder(props: AutomationManagerProps) {
@@ -51,7 +39,10 @@ export function WorkflowBuilder(props: AutomationManagerProps) {
 
   return (
     <>
-      <RolloutConnectProvider token={fetchToken} apiBaseUrl={ROLLOUT_BASE_URL!}>
+      <RolloutConnectProvider
+        token={fetchToken}
+        apiBaseUrl={process.env.NEXT_PUBLIC_ROLLOUT_BASE_URL!}
+      >
         {hasAutomations ? (
           <AutomationsManager />
         ) : (
@@ -63,7 +54,12 @@ export function WorkflowBuilder(props: AutomationManagerProps) {
           />
         )}
       </RolloutConnectProvider>
-      {showDevTools && <TestTriggerButton fetchToken={fetchToken} baseUrl={ROLLOUT_BASE_URL} />}
+      {showDevTools && (
+        <TestTriggerButton
+          fetchToken={fetchToken}
+          baseUrl={process.env.NEXT_PUBLIC_ROLLOUT_BASE_URL!}
+        />
+      )}
     </>
   );
 }
