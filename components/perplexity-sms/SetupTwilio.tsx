@@ -83,6 +83,8 @@ export function SetupTwilio(props: SetupTwilioProps) {
               {triggerInputFields && (
                 <Card>
                   Select Phone Number ☎️
+                  {/* 
+                  // @ts-ignore */}
                   <triggerInputFields.phoneNumbers variables={[]} />
                 </Card>
               )}
@@ -93,7 +95,7 @@ export function SetupTwilio(props: SetupTwilioProps) {
           handleAutomationCreated(ctx.automation);
         }}
       />
-      <AutomationsManager />
+      {/* <AutomationsManager /> */}
     </RolloutConnectProvider>
   );
 }
