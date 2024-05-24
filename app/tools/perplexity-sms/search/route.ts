@@ -21,6 +21,7 @@ export async function POST(request: Request) {
 
   // Fetch conversation history from DB
   const supabase = createClient(process.env.SUPABASE_URL || '', process.env.SUPABASE_KEY || '');
+  let historyData = null;
   const { data, error: readError } = await supabase
     .from('perplexity-chat')
     .select('chat_history')
@@ -28,7 +29,9 @@ export async function POST(request: Request) {
     .limit(1)
     .single();
   if (readError) {
-    throw new Error(readError.message);
+    console.log('No existing chat history found for this phone number');
+  } else {
+    historyData = data;
   }
 
   // Get answer from Perplexity API
@@ -38,25 +41,29 @@ export async function POST(request: Request) {
     content: requestData.message,
   };
 
-  if (data != null) {
+  if (historyData == null) {
     messages = [SYSTEM_PROMPT, userQuestion];
   } else {
-    messages = [...(data as ChatHistory).chat_history, userQuestion];
+    messages = [...(historyData as ChatHistory).chat_history, userQuestion];
   }
   const answer = await askPerplexity(messages);
 
-  // Add response to chat history
+  // Add response to chat history or create a new entry if none exists
   messages.push(answer);
-  const { error: writeError } = await supabase
-    .from('perplexity-chat')
-    .update({ chat_history: messages })
-    .eq('user_id', requestData.from);
-  if (writeError) {
-    throw new Error(writeError.message);
+  if (historyData) {
+    await supabase
+      .from('perplexity-chat')
+      .update({ chat_history: messages })
+      .eq('user_id', requestData.from);
+  } else {
+    await supabase
+      .from('perplexity-chat')
+      .insert({ chat_history: messages, user_id: requestData.from });
   }
 
   // Send trigger event
   const token = genToken(requestData.userId);
+
   const triggerEvent = await fetch(
     `${process.env.NEXT_PUBLIC_ROLLOUT_BASE_URL}/trigger-push-event`,
     {
@@ -69,8 +76,9 @@ export async function POST(request: Request) {
         appKey: 'rollout-tools',
         triggerKey: 'message-received',
         payload: {
+          to: requestData.to,
           from: requestData.from,
-          message: requestData.message,
+          message: answer.content,
         },
       }),
     }

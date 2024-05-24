@@ -9,6 +9,7 @@ export const UI = defineUIComponent<typeof inputParamsSchema>((props) => {
 
   return (
     <>
+      <RichTextInput bind={b.to} />
       <RichTextInput bind={b.from} />
       <RichTextInput bind={b.message} />
     </>

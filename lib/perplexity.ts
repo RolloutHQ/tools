@@ -10,6 +10,7 @@ export interface ChatHistory {
 }
 
 export const askPerplexity = async (messages: ChatEntry[]) => {
+  console.log('asking perplexity');
   const url = 'https://api.perplexity.ai/chat/completions';
   const options = {
     method: 'POST',
