@@ -224,9 +224,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/cli@npm:^2.2.96":
-  version: 2.2.115
-  resolution: "@rollout/cli@npm:2.2.115"
+"@rollout/cli@npm:2.2.176":
+  version: 2.2.176
+  resolution: "@rollout/cli@npm:2.2.176"
   dependencies:
     "@elysiajs/eden": 1.0.5
     chokidar: 3.5.3
@@ -242,20 +242,20 @@ __metadata:
     zod: 3.22.4
   bin:
     rollout: dist/cli.cjs.js
-  checksum: 68f230892ef2d320a8cd3eea3dae106fd8851c73f77864ac8fec31229fb67da5cf66bad2507c8f0e6fec56061a0af7f91870a43fe11544054e18d48135708176
+  checksum: 97f40f2fee1573439888fef5514f62ce4b66bd682168d824e1cd5ddeb6600b01a51b8e3edf8f1696aa7c4e2be67f366c6763fefba51a8a9476d404b049bd081d
   languageName: node
   linkType: hard
 
-"@rollout/framework@npm:2.2.147":
-  version: 2.2.147
-  resolution: "@rollout/framework@npm:2.2.147"
+"@rollout/framework@npm:2.2.176":
+  version: 2.2.176
+  resolution: "@rollout/framework@npm:2.2.176"
   dependencies:
     "@sinclair/typebox": 0.32.10
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: d0c48d39273a4f80c57d7a88e3e58bdddc87e97296d875765d6829fe51b851cd6937793a1e0986accfd718a6020f30a03dc6c57b732f35fe0c2b25147b4a147d
+  checksum: a439716ac4be603d7984a368cddff781cb9f4eaa3a8c4dfd53dda13d5ce397a2eaa5dc5fb1581ea19a789f7eeba143fed758c0cbd15b3750fff0d952d58226e9
   languageName: node
   linkType: hard
 
@@ -1831,8 +1831,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rollout-tools-project@workspace:."
   dependencies:
-    "@rollout/cli": ^2.2.96
-    "@rollout/framework": 2.2.147
+    "@rollout/cli": 2.2.176
+    "@rollout/framework": 2.2.176
     "@types/node": ^20.8.4
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11

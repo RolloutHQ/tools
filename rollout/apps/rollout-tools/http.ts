@@ -4,8 +4,8 @@ import {
   defineHTTPHandler,
   handleConsumerRequest,
   handlePushTriggerEvent,
-  waitForAutomationRunResult,
   getAutomation,
+  getAutomationRun,
 } from '@rollout/framework';
 
 const router = new Elysia().post(
@@ -43,11 +43,14 @@ const router = new Elysia().post(
       addToQueueFront: true,
     });
 
-    const { execution } = await waitForAutomationRunResult({
-      automationRunId: automationRun.id,
+    const { executions } = await getAutomationRun({
+      where: {
+        automationRunId: automationRun.id,
+      },
+      waitFor: "any-execution",
     });
 
-    return { execution };
+    return { execution: executions[0] };
   },
   {
     body: t.Object({
