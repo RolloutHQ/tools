@@ -19,7 +19,7 @@ export default function SignUpNotification() {
         onClose={handleClose}
         style={{ overflow: 'visible' }}
       >
-        Want to use this page for real? <Link href="sign-up">Sign up</Link> to save your automations
+        Want to use this page for real? <Link href="/tools/sign-up">Sign up</Link> to save your automations
         so you can pick up where you left off
       </Notification>
     );
