@@ -246,23 +246,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollout/framework@npm:2.2.176":
-  version: 2.2.176
-  resolution: "@rollout/framework@npm:2.2.176"
+"@rollout/framework@npm:2.2.258":
+  version: 2.2.258
+  resolution: "@rollout/framework@npm:2.2.258"
   dependencies:
-    "@sinclair/typebox": 0.32.10
+    "@sinclair/typebox": 0.32.17
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
   peerDependencies:
     zod: ">=3.20.0"
-  checksum: a439716ac4be603d7984a368cddff781cb9f4eaa3a8c4dfd53dda13d5ce397a2eaa5dc5fb1581ea19a789f7eeba143fed758c0cbd15b3750fff0d952d58226e9
+  checksum: 304959f9574a0591b0137060a790a833d056cc1cfdc0073db3b96a7f4aac17da7922d062ecf15d5493492238d40b7baafa7365a1a75160dd46cd9c3c5ec42e55
   languageName: node
   linkType: hard
 
-"@sinclair/typebox@npm:0.32.10":
-  version: 0.32.10
-  resolution: "@sinclair/typebox@npm:0.32.10"
-  checksum: 5e3b47cddf2c6b2d4699249db75b28a4ede41b6f74f5e73b89e799237c9d9818fad48cdec574b595f6bd836e617fa3e66a62adc409a00ab3412ad0e26ffdd424
+"@sinclair/typebox@npm:0.32.17":
+  version: 0.32.17
+  resolution: "@sinclair/typebox@npm:0.32.17"
+  checksum: 361926cf2621ff78973ad96c279be09a648555dd673b55b82119a73c6f7144f42f4ebd9e7e2c139e4194f734478c5ba570014ef821a2c0d4d56103b77ff44ca4
   languageName: node
   linkType: hard
 
@@ -1832,7 +1832,7 @@ __metadata:
   resolution: "rollout-tools-project@workspace:."
   dependencies:
     "@rollout/cli": 2.2.176
-    "@rollout/framework": 2.2.176
+    "@rollout/framework": 2.2.258
     "@types/node": ^20.8.4
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
