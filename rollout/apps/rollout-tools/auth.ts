@@ -25,6 +25,8 @@ export const auth = defineApiTokenAuth<RolloutToolsCredential>()({
   },
 
   async getCredentialOption({ credential }) {
+    console.log("credential", credential);
+    
     return {
       label: credential.data.label,
     };
