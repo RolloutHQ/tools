@@ -1,9 +1,10 @@
 import { definePollingTrigger } from '@rollout/framework';
-
+import { randomInt } from "node:crypto";
 import { inputParamsSchema } from './input';
 import { payloadSchema } from './payload';
 
-type State = string[];
+type State = { date: string; pod: number }[];
+const pod = randomInt(100);
 
 export const trigger = definePollingTrigger<never, State>()({
   name: 'Test Polling Trigger',
@@ -13,10 +14,11 @@ export const trigger = definePollingTrigger<never, State>()({
     const d = new Date();
 
     return {
-      newState: [...prevState ?? [], d.toISOString()],
+      newState: [...prevState ?? [], { date: d.toISOString(), pod }],
       events: [
         {
           name: d.toISOString(),
+          pod,
         },
       ],
     };
