@@ -2,6 +2,7 @@ import { definePollingTrigger } from '@rollout/framework';
 import { randomInt } from "node:crypto";
 import { inputParamsSchema } from './input';
 import { payloadSchema } from './payload';
+import { setTimeout } from 'node:timers/promises';
 
 type State = { date: string; pod: number }[];
 const pod = randomInt(100);
@@ -12,6 +13,8 @@ export const trigger = definePollingTrigger<never, State>()({
   payloadSchema,
   async poll({ prevState }) {
     const d = new Date();
+
+    await setTimeout(1000);
 
     return {
       newState: [...prevState ?? [], { date: d.toISOString(), pod }],
