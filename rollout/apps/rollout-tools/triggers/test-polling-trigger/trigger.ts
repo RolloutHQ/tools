@@ -14,7 +14,7 @@ export const trigger = definePollingTrigger<never, State>()({
   async poll({ prevState }) {
     const d = new Date();
 
-    await setTimeout(1000);
+    await setTimeout(1000 + 3000 * Math.random());
 
     return {
       newState: [...prevState ?? [], { date: d.toISOString(), pod }],
